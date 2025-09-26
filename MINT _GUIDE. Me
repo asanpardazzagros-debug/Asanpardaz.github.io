@@ -1,0 +1,29 @@
+# راهنمای ساخت NFT برای Mint در داشبورد asanpardaz.eth
+
+این راهنما به شما کمک می‌کنه تا داشبورد یا هر اثر دیجیتال دیگه رو به‌عنوان NFT منتشر کنید و قابلیت Mint رو فعال کنید.
+
+---
+
+## مراحل ساخت NFT قابل‌مینت:
+
+### 1. آماده‌سازی فایل
+- تصویر یا فایل HTML داشبورد رو آماده کن
+- ترجیحاً از نسخه‌ی تصویری (PNG/SVG) برای Mint استفاده کن
+
+### 2. آپلود روی IPFS یا Arweave
+- استفاده از سرویس‌هایی مثل:
+  - [Pinata](https://pinata.cloud)
+  - [NFT.Storage](https://nft.storage)
+  - [Arweave](https://arweave.org)
+
+### 3. ساخت متادیتا NFT
+```json
+{
+  "name": "asanpardaz.eth Dashboard",
+  "description": "هویت دیجیتال Web3 با طراحی نئونی و قابلیت تعامل",
+  "image": "ipfs://your-image-hash",
+  "attributes": [
+    { "trait_type": "Creator", "value": "Khalil.eth" },
+    { "trait_type": "Theme", "value": "Neon Web3" }
+  ]
+}
